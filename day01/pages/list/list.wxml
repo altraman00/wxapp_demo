@@ -1,0 +1,36 @@
+<!-- pages/list.wxml -->
+<import src="..//templates/takeout.wxml"></import>
+
+<view class="list">
+  <view class="">
+    <view class="navbar">
+      <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentYab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">
+        {{item}}
+      </text>
+    </view>
+
+    <!-- 美团 -->
+    <view hidden="{{currentTab!==0}}">
+      <text class="title">tab_01</text>
+      <block wx:for="{{message}}" wx:key="id">
+        <template is="personCourseItemTmp" data="{{...item}}"></template>
+      </block>
+    </view>
+
+
+    <!-- 饿了么 -->
+    <view hidden="{{currentTab!==1}}">
+      <text class="title">tab_02</text>
+      <block>
+        <template is="personCourseItemTmp" data="{{mentor_name}}"></template>
+      </block>
+
+      <block>
+        <view class="active">
+          <template class="active"></template>
+        </view>
+      </block>
+
+    </view>
+  </view>
+</view>

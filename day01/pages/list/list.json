@@ -1,0 +1,17 @@
+{
+  "usingComponents": {
+  },
+  "tabBar":{
+    "selectedColor":"#1296db",
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "text":"美团"
+      },
+      {
+        "pagePath":"pages/list/list",
+        "text":"饿了么"
+      }
+    ]
+  }
+}
