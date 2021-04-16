@@ -1,10 +1,11 @@
-<!--pages/templates/takeout.wxml-->
-<!-- <text>pages/templates/takeout.wxml</text> -->
+<!--pages/templates/templates.wxml-->
+<!-- <text>pages/templates/templates.wxml</text> -->
 
 <!-- 使用 name 属性，作为模板的名字 -->
 <template name="personCourseItemTmp">
     <!-- 显示 -->
     <view wx:if="{{mentor_image_uri==null}}">
+    
     <!-- 默认图片地址 -->
         <image class="widget_arrow" src="../../image/icon_API.png" mode="aspectFill"></image>
     </view>
@@ -26,5 +27,15 @@
 <template name="takeoutdetail">
     <view class="name"><span>名字:</span>{{takeoutName}}</view>
     <view class="name"><span>图片:</span>{{takeoutPic}}</view>
+</template>
+
+<template name="takeoutlist">
+    <view class="">
+        <view class="name">{{itemName}}</view>
+        <view class="money">{{itemMoney}}</view>
+        <view class="amountr">{{itemAmount}}</view>
+    </view>
+    <view class="tolist">{{takeoutName}}</view>
+    <button class="takeoutbtn" type="primary" bindtap="onTap"><span>免费领取</span></button>
 </template>
 

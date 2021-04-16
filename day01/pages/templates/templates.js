@@ -1,4 +1,4 @@
-// pages/templates/takeout.js
+// pages/templates/templates.js
 Component({
   /**
    * 组件的属性列表

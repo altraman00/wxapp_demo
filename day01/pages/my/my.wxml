@@ -1,5 +1,5 @@
 <!-- pages/my/my.wxml -->
-<import src="..//templates/takeout.wxml"></import>
+<import src="..//templates/templates.wxml"></import>
 
 <view>
     <block wx:for="{{message}}" wx:key="id">

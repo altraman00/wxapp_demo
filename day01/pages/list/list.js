@@ -12,8 +12,8 @@ Page({
 
   navbarTap: function(e){
     this.setData({
-      currentTab: e.currentTarget.dataset.idx,
-      takeoutName: this.data.navbar[e.currentTarget.dataset.idx]
+      currentTab: e.currentTarget.dataset.idxx,
+      takeoutName: this.data.navbar[e.currentTarget.dataset.idxx]
     })
   },
 

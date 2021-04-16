@@ -1,4 +1,4 @@
-/* pages/templates/takeout.wxss */
+/* pages/templates/templates.wxss */
 
 .name {
     text-align: center;

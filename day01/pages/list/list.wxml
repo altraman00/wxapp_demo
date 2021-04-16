@@ -1,12 +1,23 @@
 <!-- pages/list.wxml -->
-<import src="..//templates/takeout.wxml"></import>
+<import src="..//templates/templates.wxml"></import>
 <view class="list">
   <view class="">
+
+<!-- 定义data-idxx实际上是为了定义js中可获取对象数据的字段idxx（名字可随意取），
+     定义wx:for-index="ss"也行，但是需要再次定义data-idxx="{{ss}}"才行（将ss的值再次传递到idxx上，然后供js调用）
+     总结：data-xxx 是为了供给js可以获取数据对象，wx:for-index="xxxx" 相当于只是给默认的index起一个别名 -->
+    <!-- <view class="navbar">
+      <text wx:for="{{navbar}}" data-idxx="{{ss}}" wx:for-index="ss" class="item {{currentTab==ss ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">
+        {{item}}-{{index}}-{{currentTab}}-{{ss}}
+      </text>
+    </view> -->
+
     <view class="navbar">
-      <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentYab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">
-        {{item}}
+      <text wx:for="{{navbar}}" data-idxx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">
+        {{item}}-{{index}}-{{currentTab}}
       </text>
     </view>
+
     <!-- 美团 -->
     <view hidden="{{currentTab!==0}}">
       <text class="title">tab_01</text>
@@ -21,5 +32,7 @@
         <template is="takeoutdetail" data="{{takeoutName}}"></template>
       </view>
     </view>
+
+
   </view>
 </view>
