@@ -1,5 +1,5 @@
 /* pages/list.wxss */
-/* @import "../templates/takeout.wxss" */
+
 
 page{
   display: flex;

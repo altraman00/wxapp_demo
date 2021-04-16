@@ -1,2 +1,8 @@
-<!--pages/my/my.wxml-->
-<text>pages/my/my.wxml</text>
+<!-- pages/my/my.wxml -->
+<import src="..//templates/takeout.wxml"></import>
+
+<view>
+    <block wx:for="{{message}}" wx:key="id">
+        <template is="personCourseItemTmp" data="{{...item}}"></template>
+    </block>
+</view>

@@ -21,3 +21,10 @@
     <view class='hr'></view>
 </template>
 
+
+<!-- 美团和饿了么外卖红包的模板 -->
+<template name="takeoutdetail">
+    <view class="name"><span>名字:</span>{{takeoutName}}</view>
+    <view class="name"><span>图片:</span>{{takeoutPic}}</view>
+</template>
+
