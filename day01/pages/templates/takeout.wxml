@@ -6,7 +6,7 @@
     <!-- 显示 -->
     <view wx:if="{{mentor_image_uri==null}}">
     <!-- 默认图片地址 -->
-        <image class="widget_arrow" src="../../image/img1.jpg" mode="aspectFill"></image>
+        <image class="widget_arrow" src="../../image/icon_API.png" mode="aspectFill"></image>
     </view>
     <view wx:else>
         <image class="widget_arrow" src="{{mentor_image_uri}}" mode="aspectFill"></image>
