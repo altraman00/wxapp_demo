@@ -1,9 +1,9 @@
 {
   "usingComponents": {},
   "pages": [
-    "pages/my/my",
     "pages/index/index",
     "pages/list/list",
+    "pages/my/my",
     "pages/logs/logs"
   ],
   "permission": {

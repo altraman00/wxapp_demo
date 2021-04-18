@@ -1,23 +1,48 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <block wx:if="{{canIUseOpenData}}" calss="userinfo-opendata">
-      <view class="userinfo-avatar" bindtap="bindViewTap">
-        <open-data type="userAvatarUrl"></open-data>
+<!-- index.wxml -->
+<view class="content">
+  <view class="baseInfo">
+    <view class="base">基本信息</view>
+    <view class="info">
+      <view class="subject">日常生活</view>
+      <view class="subject">兴趣交流</view>
+      <view class="subject">时事经济</view>
+      <view class="subject">会员闲聊</view>
+    </view>
+  </view>
+  <view class="boardList">
+    <view class="board_plate_container">
+      <view class="board_plate">休闲区</view>
+      <view>
+        <view class="block">技术讨论区</view>
+
+        <view class="board_plate_block">
+
+          <view class="block_left">
+            <view class="block_left_subjects">
+              <view class="block_left_subject">日常生活</view>
+              <view class="block_left_subject">兴趣交流</view>
+              <view class="block_left_subject">时事经济</view>
+              <view class="block_left_subject">会员闲聊</view>
+            </view>
+            <view class="block_left_info">
+              <view class="block_left_num">主题:{{board.relaxation.topicNum}}</view>
+              <view class="block_left_num">文章:{{board.relaxation.articleNum}}</view>
+            </view>
+          </view>
+
+          <view class="block_right">跳转</view>
+
+        </view>
+
       </view>
-      <open-data type="userNickName"></open-data>
-    </block>
-    <block wx:elif="{{!hasUserInfo}}">
-      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
-      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
-    </block>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+    </view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+</view>
+
+<view class="show-info">
+  <view class="left">111</view>
+  <view class="left">111</view>
+  <view class="right">222</view>
+  <view class="right">222</view>
+  <view class="right">222</view>
 </view>
