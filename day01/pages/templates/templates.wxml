@@ -3,23 +3,25 @@
 
 <!-- 使用 name 属性，作为模板的名字 -->
 <template name="personCourseItemTmp">
-    <!-- 显示 -->
-    <view wx:if="{{mentor_image_uri==null}}">
+    <view class="personCourse">
+        <view class='header'>我是顶部</view>
+        <!-- 显示 -->
+        <view wx:if="{{mentor_image_uri==null}}">
+        <!-- 默认图片地址 -->
+            <image class="widget_arrow" src="../../image/icon_API.png" mode="aspectFill"></image>
+        </view>
+        <view wx:else>
+            <image class="widget_arrow" src="{{mentor_image_uri}}" mode="aspectFill"></image>
+        </view>
     
-    <!-- 默认图片地址 -->
-        <image class="widget_arrow" src="../../image/icon_API.png" mode="aspectFill"></image>
+        <view class='info'><span>姓名：</span>{{mentor_name}}</view>
+        <view class='info'><span>职位：</span>{{career}}</view>
+        <view class='info'><span>公司：</span>{{company_name}}</view>
+        <view class='info'><span>地区：</span>{{address}}</view>
+        <view class='info'><span>擅长：</span>{{mentor_skills}}</view>
+        <navigator>详情</navigator>
+        <view class='footer'>我是底部</view>
     </view>
-    <view wx:else>
-        <image class="widget_arrow" src="{{mentor_image_uri}}" mode="aspectFill"></image>
-    </view>
-  
-    <view class='info'><span>姓名：</span>{{mentor_name}}</view>
-    <view class='info'><span>职位：</span>{{career}}</view>
-    <view class='info'><span>公司：</span>{{company_name}}</view>
-    <view class='info'><span>地区：</span>{{address}}</view>
-    <view class='info'><span>擅长：</span>{{mentor_skills}}</view>
-    <navigator>详情</navigator>
-    <view class='hr'></view>
 </template>
 
 
