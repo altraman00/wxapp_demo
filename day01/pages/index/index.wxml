@@ -1,32 +1,39 @@
 <!-- index.wxml -->
 <import src="..//templates/templates.wxml"></import>
-
 <view class="content">
   <view class="baseInfo">
-    <view class="base">基本信息</view>
-    <view class="info">
-      <view class="subject">日常生活</view>
-      <view class="subject">兴趣交流</view>
-      <view class="subject">时事经济</view>
-      <view class="subject">会员闲聊</view>
+    <view class="base">
+      <text class="search-name">项目检索</text>
+      <input class="input" placeholder="请输入关键字" placeholder-class="input-placeholder" bindinput="keySearch" />
+      <text class="search-btn">检索</text>
+    </view>
+    <view class="show-info">
+      <view class="account">>>{{account}}</view>
+      <view class="func-right">
+        <view class="func">充值</view>
+        <view class="func">|</view>
+        <view class="func">道具</view>
+        <view class="func">|</view>
+        <view class="func">消息</view>
+        <view class="func">|</view>
+        <view class="func">检索</view>
+        <view class="func">|</view>
+        <view class="func">推广</view>
+      </view>
     </view>
   </view>
-
   <view class="boardList">
     <view class="board_plate">休闲区</view>
-    <block wx:for="{{boardList}}" wx:key="name">
+    <block wx:for="{{relaxBoardList}}" wx:key="name">
+      <template is="boardPlateTemplate" data="{{...item}}"></template>
+    </block>
+    <view class="board_plate">闲聊区</view>
+    <block wx:for="{{relaxBoardList}}" wx:key="name">
+      <template is="boardPlateTemplate" data="{{...item}}"></template>
+    </block>
+    <view class="board_plate">跨天区</view>
+    <block wx:for="{{relaxBoardList}}" wx:key="name">
       <template is="boardPlateTemplate" data="{{...item}}"></template>
     </block>
   </view>
-
-</view>
-
-<view class="show-info">
-  <view class="left">111</view>
-  <view class="left">111</view>
-  <view class="left">111</view>
-  <view class="left">111</view>
-  <view class="right">222</view>
-  <view class="right">222</view>
-  <view class="right">222</view>
 </view>

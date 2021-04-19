@@ -58,7 +58,7 @@
                     <view class="block_left_num">文章:{{boardNum.articleNum}}</view>
                 </view>
             </view>
-            <view class="block_right">跳转</view>
+            <view class="block_right">>></view>
         </view>
     </view>
 </template>

@@ -1,7 +1,9 @@
 /* pages/templates/templates.wxss */
 
+/*************************** 个人模块 start ***************************/
+
 .personCourse{
-    border: 2px solid red;
+    border: 1px solid red;
 }
 
 /* .personCourse .name {
@@ -13,7 +15,7 @@
     height: 200px;
     width: 200px;
     margin-left: 25%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .personCourse .info {
@@ -21,12 +23,12 @@
   width: 200px;
   margin-left: 25% ;
   margin-top: 10px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .personCourse .info span{
   font-weight: 600;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .personCourse navigator {
@@ -43,11 +45,91 @@
 .personCourse .header {
     height: 10;
     width: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .personCourse .footer {
     height: 10;
     width: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
+
+/*************************** 个人模块 end ***************************/
+
+
+
+
+/*************************** 社区模块 start ***************************/
+
+.block{
+    border-top: 1px solid #c0c0c0;
+    /* border-bottom: 1px solid #c0c0c0; */
+}
+
+.board_plate_block{
+width: 100%;
+display: flex;
+/* 从左往右行排列 */
+flex-direction: row;
+/* 左对齐 */
+justify-content: left;
+/* 交叉轴的起点对齐 */
+align-items: center;
+padding: 10rpx 0;
+box-sizing: border-box;
+/* border: 1px solid red; */
+}
+
+.block_left{
+width: 80%;
+display: flex;
+/* 从左往右行排列 */
+flex-direction: column;
+/* 左对齐 */
+justify-content: left;
+/* 交叉轴的起点对齐 */
+align-items:flex-start;
+/* border: 1px solid red; */
+}
+
+
+.block_left .block_left_subjects{
+display: flex;
+font-size: smaller;
+flex-direction: row;
+justify-content: left;
+align-items: center;
+/* border: 1px solid rebeccapurple; */
+}
+
+.block_left .block_left_subject{
+width: 50%;
+padding-left: 10rpx;
+/* border: 1px solid olive; */
+}
+
+.block_left .block_left_info{
+display: flex;
+font-size: smaller;
+flex-direction: row;
+justify-content: left;
+align-items: center;
+/* border: 1px solid rebeccapurple; */
+}
+
+.block_left .block_left_num{
+width: auto;
+padding-left: 10rpx;
+/* border: 1px solid olive; */
+}
+
+.block_right{
+width: 20%;
+display: flex;
+justify-content: center;
+align-items: center;
+/* border: 1px solid blue; */
+}
+  
+  /*************************** 社区模块 end ***************************/
+  

@@ -1,155 +1,96 @@
 /**index.wxss**/
 
+@import "../templates/templates.wxss";
+
 .content{
   width: 100%;
-  border: 1px solid blue;
+  margin-left: 10rpx;
+  /* border: 1px solid blue; */
 }
 
-.baseInfo{
-  width: auto;
-  border: 1px solid red;
-}
 
 .baseInfo .base{
-  width: auto;
-  border: 1px solid blue;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+  /* border: 1px solid red; */
 }
 
-.baseInfo .info{
+.baseInfo .search-name{
+  width: 20%;
   display: flex;
-  font-size: small;
-  flex-direction: row;
-  justify-content: center;
-  border: 1px solid red;
 }
+
+.baseInfo .input{
+  width: 60%;
+  display: flex;
+  border-radius: 8px;
+  border: 1px solid #c0c0c0;
+}
+
+.baseInfo .input .input-placeholder{
+  padding-left: 5px;
+  font-size: smaller;
+  color: #c0c0c0;
+}
+
+.baseInfo .search-btn{
+  width: 20%;
+  display: flex;
+  margin-left: 10rpx;
+  /* border: 1px solid gray; */
+}
+
+
+
+.show-info {
+  height: 100%;
+  margin-top: 20rpx;
+  display: flex;
+  font-size: medium;
+  box-sizing: border-box;
+  background-color:#c0c0c0;
+  /* border: 1px solid blue; */
+}
+
+.account {
+  width: 40%;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  overflow: hidden;
+  /* border: 1px solid red; */
+}
+
+.func-right {
+  width: 55%;
+  display: flex;
+  justify-content:flex-end;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+.func-right .func{
+  padding: 3rpx;
+  /* border: 1px solid blue; */
+}
+
 
 
 .boardList{
   margin-top: 20rpx;
   width: auto;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
-
-.board_plate_container{
-  width: auto;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid rebeccapurple;
-}
-
-
 
 .board_plate{
   width: auto;
   font-size: larger;
-  border: 1px solid olive;
+  background-color: #c0c0c0;
 }
 
 
-
-
-.board_plate_block{
-  width: 100%;
-  display: flex;
-  /* 从左往右行排列 */
-  flex-direction: row;
-  /* 左对齐 */
-  justify-content: left;
-  /* 交叉轴的起点对齐 */
-  align-items: center;
-  padding: 10rpx 0;
-  box-sizing: border-box;
-  border: 1px solid red;
-}
-
-.block_left{
-  width: 80%;
-  display: flex;
-  /* 从左往右行排列 */
-  flex-direction: column;
-  /* 左对齐 */
-  justify-content: left;
-  /* 交叉轴的起点对齐 */
-  align-items:flex-start;
-  border: 1px solid red;
-}
-
-
-.block_left .block_left_subjects{
-  display: flex;
-  font-size: smaller;
-  flex-direction: row;
-  justify-content: left;
-  align-items: center;
-  border: 1px solid rebeccapurple;
-}
-
-.block_left .block_left_subject{
-  width: 50%;
-  padding-left: 10rpx;
-  border: 1px solid olive;
-}
-
-.block_left .block_left_info{
-  display: flex;
-  font-size: smaller;
-  flex-direction: row;
-  justify-content: left;
-  align-items: center;
-  border: 1px solid rebeccapurple;
-}
-
-.block_left .block_left_num{
-  width: auto;
-  padding-left: 10rpx;
-  border: 1px solid olive;
-}
-
-.block_right{
-  width: 20%;
-  display: flex;
-  border: 1px solid blue;
-  justify-content: center;
-  align-items: center;
-}
-
-
-
-
-
-
-
-
-.show-info {
-     height: 100%;
-     display: flex;
-     flex-direction: row;
-     align-items: flex-start;
-     padding: 10rpx 0;
-     box-sizing: border-box;
-     border: 1px solid red;
-}
-
-.left {
-     width: 70%;
-     height: 100%;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     /* margin:2px; */
-     border: 1px solid blue;
-}
-
-.right {
-  width: 30%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* margin:2px; */
-  border: 1px solid blue;
-}
 
 
