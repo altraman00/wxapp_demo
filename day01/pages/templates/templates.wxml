@@ -41,3 +41,24 @@
     <button class="takeoutbtn" type="primary" bindtap="onTap"><span>免费领取</span></button>
 </template>
 
+
+<!-- 贴吧板块模板 -->
+<template name="boardPlateTemplate">
+    <view class="board_plate_container">
+        <view class="block">{{boardName}}</view>
+        <view class="board_plate_block">
+            <view class="block_left">
+                <view class="block_left_subjects">
+                    <block wx:for="{{boardIntro}}" wx:key="intro">
+                        <view class="block_left_subject">{{item}}</view>
+                    </block>
+                </view>
+                <view class="block_left_info">
+                    <view class="block_left_num">主题:{{boardNum.topicNum}}</view>
+                    <view class="block_left_num">文章:{{boardNum.articleNum}}</view>
+                </view>
+            </view>
+            <view class="block_right">跳转</view>
+        </view>
+    </view>
+</template>
