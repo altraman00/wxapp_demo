@@ -49,8 +49,8 @@
         <view class="board_plate_block">
             <view class="block_left">
                 <view class="block_left_subjects">
-                    <block wx:for="{{boardIntro}}" wx:key="intro">
-                        <view class="block_left_subject">{{item}}</view>
+                    <block wx:for="{{boardIntro}}" wx:for-item="intro" wx:key="intro">
+                        <view class="block_left_subject">{{intro}}</view>
                     </block>
                 </view>
                 <view class="block_left_info">
