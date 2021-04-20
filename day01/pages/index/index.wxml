@@ -28,11 +28,11 @@
       <template is="boardPlateTemplate" data="{{...item}}"></template>
     </block>
     <view class="board_plate">闲聊区</view>
-    <block wx:for="{{relaxBoardList}}" wx:key="name">
+    <block wx:for="{{chatBoardList}}" wx:key="name">
       <template is="boardPlateTemplate" data="{{...item}}"></template>
     </block>
     <view class="board_plate">跨天区</view>
-    <block wx:for="{{relaxBoardList}}" wx:key="name">
+    <block wx:for="{{acrossBoardList}}" wx:key="name">
       <template is="boardPlateTemplate" data="{{...item}}"></template>
     </block>
   </view>

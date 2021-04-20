@@ -8,7 +8,7 @@
         <!-- 显示 -->
         <view wx:if="{{mentor_image_uri==null}}">
         <!-- 默认图片地址 -->
-            <image class="widget_arrow" src="../../image/icon_API.png" mode="aspectFill"></image>
+            <image class="widget_arrow" src="../../image/nav/icon_API.png" mode="aspectFill"></image>
         </view>
         <view wx:else>
             <image class="widget_arrow" src="{{mentor_image_uri}}" mode="aspectFill"></image>
@@ -27,9 +27,10 @@
 
 <!-- 美团和饿了么外卖红包的模板 -->
 <template name="takeoutdetail">
-    <view class="name"><span>名字:</span>{{takeoutName}}</view>
-    <view class="name"><span>图片:</span>{{takeoutPic}}</view>
+    <image class="takeout-pic" src="../../image/takeout/coupon/meituan_banner.png" mode="aspectFill"></image>
+    <button class="takeout-btn"><span>领</span></button>
 </template>
+
 
 <template name="takeoutlist">
     <view class="">

@@ -1,0 +1,460 @@
+/* pages/takeout/takeout.wxss */
+
+
+
+.take_out {
+    padding-bottom: 20rpx;
+    /* border: 2px solid red; */
+  }
+  
+  .take_out .lxy_nav_bar__center {
+    font-weight: 700;
+    letter-spacing: 1rpx;
+  }
+  
+  .take_out .banner {
+    position: relative;
+    background-color: #fff;
+  }
+  
+  .take_out .banner .bg {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .take_out .banner .bg .up_space {
+    height: 55%;
+    background-color: #ea3855;
+  }
+  
+  .take_out .banner .bg .down_space {
+    height: 40rpx;
+    background-color: #ea3855;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+  }
+  
+  .take_out .banner .hover {
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 20rpx 0 0;
+  }
+  
+  .take_out .banner .hover .swiper {
+    height: 238rpx;
+  }
+  
+  .take_out .banner .hover .swiper .swiper_item {
+    padding: 0 25rpx;
+    box-sizing: border-box;
+    height: 238rpx;
+  }
+  
+  .take_out .banner .hover .swiper .swiper_item .img {
+    display: block;
+    width: 700rpx;
+    height: 238rpx;
+    border-radius: 40rpx;
+  }
+  
+  .take_out .icon_btns, .take_out .icon_btns .item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+  }
+  
+  .take_out .icon_btns {
+    padding: 35rpx 25rpx;
+  }
+  
+  .take_out .icon_btns .item {
+    flex: 1;
+    justify-content: center;
+    border-radius: 0;
+  }
+  
+  .take_out .icon_btns .item:first-child {
+    border-right: 2rpx dashed #c4c4c4;
+  }
+  
+  .take_out .icon_btns .item::after, .take_out .icon_menu .item::after {
+    border: 0;
+  }
+  
+  .take_out .icon_btns .item .icon {
+    width: 60rpx;
+    height: 60rpx;
+  }
+  
+  .take_out .icon_btns .item .label {
+    font-size: 30rpx;
+    margin-left: 18rpx;
+  }
+  
+  .take_out .icon_menu, .take_out .icon_menu .item {
+    background-color: #fff;
+    padding: 35rpx 25rpx 25rpx;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .take_out .icon_menu .item {
+    flex-direction: column;
+    justify-content: center;
+    border: 0;
+    outline: 0;
+    background-color: initial;
+    margin: 0;
+    padding: 0;
+    height: 120rpx;
+  }
+  
+  .take_out .icon_menu .item .icon {
+    width: 76rpx;
+    height: 76rpx;
+  }
+  
+  .take_out .icon_menu .item .label {
+    font-size: 22rpx;
+    height: 26rpx;
+    line-height: 26rpx;
+    margin-top: 14rpx;
+  }
+  
+  .take_out .icon_menu, .take_out .icon_menu .item, .take_out .list, .take_out .list .item {
+    display: flex;
+  }
+  
+  .take_out .list {
+    flex-direction: column;
+    padding: 28rpx 25rpx 0;
+  }
+  
+  .take_out .list .item {
+    flex-wrap: nowrap;
+    border-radius: 28rpx;
+    margin-bottom: 20rpx;
+    align-items: center;
+    overflow: hidden;
+    height: 180rpx;
+  }
+  
+  .take_out .list .item .left {
+    width: 72%;
+    height: 180rpx;
+    position: relative;
+    background-color: #fff;
+  }
+  
+  .take_out .list .item .left::after, .take_out .list .item .left::before {
+    content: "";
+    position: absolute;
+    right: -12rpx;
+    width: 24rpx;
+    height: 24rpx;
+    border-radius: 50%;
+    background-color: #f3f3f3;
+  }
+  
+  .take_out .list .item .left::before {
+    top: -12rpx;
+  }
+  
+  .take_out .list .item .left::after {
+    bottom: -12rpx;
+  }
+  
+  .take_out .list .item .left .label {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .take_out .list .item .left .label.ele {
+    width: 106rpx;
+    height: 106rpx;
+  }
+  
+  .take_out .list .item .left .label.mt {
+    width: 107rpx;
+    height: 107rpx;
+  }
+  
+  .take_out .list .item .left .mark {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .take_out .list .item .left .mark.ele {
+    width: 92rpx;
+  }
+  
+  .take_out .list .item .left .mark.mt {
+    width: 119rpx;
+  }
+  
+  .take_out .list .item .left .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 180rpx;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 84rpx;
+  }
+  
+  .take_out .list .item .left .content .title, .take_out .list .item .right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .take_out .list .item .left .content .title {
+    font-weight: 600;
+    font-size: 30rpx;
+  }
+  
+  .take_out .list .item .left .content .title .corner {
+    width: 5rpx;
+    height: 7rpx;
+    margin: 0 7rpx;
+    position: relative;
+  }
+  
+  .take_out .list .item .left .content .title .corner.left-top {
+    top: -10rpx;
+  }
+  
+  .take_out .list .item .left .content .title .corner.right-bottom {
+    top: 10rpx;
+  }
+  
+  .take_out .list .item .left .content .title .new {
+    width: 71rpx;
+    height: 30rpx;
+    margin-left: 2rpx;
+    position: relative;
+    top: -11rpx;
+  }
+  
+  .take_out .list .item .left .content .info {
+    font-size: 26rpx;
+  }
+  
+  .take_out .list .item .left .content .info .price {
+    color: #ff304d;
+    font-size: 52rpx;
+    font-weight: 700;
+    position: relative;
+    top: 4rpx;
+    margin-right: 6rpx;
+    font-family: PingFang SC;
+  }
+  
+  .take_out .list .item .left .content .info .unit {
+    color: #ff304d;
+    margin-right: 6rpx;
+  }
+  
+  .take_out .list .item .left .content .info .tip {
+    background-color: #ffebe3;
+    padding: 4rpx 8rpx;
+    border-radius: 4rpx;
+    color: #aa1e3b;
+  }
+  
+  .take_out .list .item .right {
+    width: 28%;
+    height: 180rpx;
+    position: relative;
+    background-color: #fff;
+    border-left: 4rpx dashed #eee;
+    justify-content: center;
+  }
+  
+  .take_out .list .item .right::after, .take_out .list .item .right::before {
+    content: "";
+    position: absolute;
+    left: -12rpx;
+    width: 24rpx;
+    height: 24rpx;
+    border-radius: 50%;
+    background-color: #f3f3f3;
+  }
+  
+  .take_out .list .item .right::before {
+    top: -12rpx;
+  }
+  
+  .take_out .list .item .right::after {
+    bottom: -12rpx;
+  }
+  
+  .take_out .list .item .right .btn {
+    width: 80%;
+    height: 64rpx;
+    line-height: 64rpx;
+    border-radius: 32rpx;
+    font-size: 26rpx;
+    text-align: center;
+  }
+  
+  .take_out .list .item .right .btn.red {
+    background-color: #ff5b73;
+    color: #fff;
+  }
+  
+  .take_out .list .item .right .btn.yellow {
+    background-color: #fcd530;
+    color: #666;
+  }
+  
+  .take_out .card, .take_out .list.shadow {
+    background-color: #fff;
+  }
+  
+  .take_out .list.shadow .item {
+    box-shadow: 0 12rpx 33rpx 2rpx rgba(213, 213, 213, 0.65);
+  }
+  
+  .take_out .list.shadow .item .left::after, .take_out .list.shadow .item .left::before, .take_out .list.shadow .item .right::after, .take_out .list.shadow .item .right::before {
+    background-color: #f1f1f1;
+  }
+  
+  .take_out .card {
+    padding: 0 30rpx;
+  }
+  
+  .take_out .card .header, .take_out .card .header .title {
+    display: flex;
+    align-items: center;
+  }
+  
+  .take_out .card .header {
+    height: 78rpx;
+    justify-content: space-between;
+    padding-bottom: 20rpx;
+  }
+  
+  .take_out .card .header .title {
+    height: 100%;
+    font-size: 26rpx;
+    font-weight: 600;
+  }
+  
+  .take_out .card .header .extra {
+    height: 100%;
+    font-size: 24rpx;
+    color: #999;
+  }
+  
+  .take_out .card .header .extra .icon-font {
+    font-size: 24rpx;
+    margin-left: 10rpx;
+  }
+  
+  .take_out .card .body, .take_out .card .header .extra {
+    display: flex;
+    align-items: center;
+  }
+  
+  .take_out .card.films .body {
+    height: 300rpx;
+  }
+  
+  .take_out .card.films .body .item {
+    width: 186rpx;
+    padding: 0 5rpx;
+  }
+  
+  .take_out .card.films .body .item .pic {
+    width: 175rpx;
+    height: 234rpx;
+    border-radius: 10rpx;
+    position: relative;
+  }
+  
+  .take_out .card.films .body .item .pic .grade {
+    position: absolute;
+    bottom: 12rpx;
+    left: 12rpx;
+    color: #d8c3b0;
+    font-size: 18rpx;
+  }
+  
+  .take_out .card.films .body .item .name {
+    font-size: 22rpx;
+    overflow: hidden;
+    height: 24rpx;
+    line-height: 24rpx;
+    margin-top: 10rpx;
+    font-weight: 500;
+  }
+  
+  .take_out .card.films .body .item .btn {
+    width: 100rpx;
+    height: 50rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 24rpx;
+    border-radius: 25rpx;
+    margin-top: 18rpx;
+  }
+  
+  .take_out .card.films .body .item .btn.buy {
+    background-color: #ef5054;
+  }
+  
+  .take_out .card.films .body .item .btn.book {
+    background-color: #06acff;
+  }
+  
+  .take_out .card.films .body .item .btn.disabled {
+    background-color: #ccc;
+  }
+  
+  .take_out .card.multi {
+    margin-top: 13rpx;
+    padding-bottom: 25rpx;
+  }
+  
+  .take_out .card.multi .body .item {
+    width: 215rpx;
+    flex-direction: column;
+    margin-right: 24rpx;
+  }
+  
+  .take_out .card.multi .body .item .img {
+    width: 215rpx;
+    height: 276rpx;
+  }
+  
+  .take_out .card.multi .body .item, .take_out .card.multi .body .item .btn {
+    display: flex;
+    align-items: center;
+  }
+  
+  .take_out .card.multi .body .item .btn {
+    width: 112rpx;
+    height: 50rpx;
+    color: #fff;
+    font-size: 24rpx;
+    margin-top: 18rpx;
+    border-radius: 25rpx;
+    justify-content: center;
+    background-color: #ef5054;
+  }
+  
+  .take_out .card.multi .body .item:last-child {
+    margin-right: 0;
+  }
+  
+  

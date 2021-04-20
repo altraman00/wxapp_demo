@@ -1,0 +1,88 @@
+
+<view class="take_out">
+    <view class="banner">
+        <view class="bg">
+            <view class="up-space"></view>
+            <view class="down_space"></view>
+        </view>
+        <view class="hover">
+            <swiper class="swiper" autoplay='true' circular='true' indicator-active-color="#fff" indicator-color="#ccc" indicator-dots='true'>
+                <swiper-item class="swiper_item">
+                    <image class="img" mode="widthFix" src="../../image/takeout/coupon/weapp-1.png"></image>
+                </swiper-item>
+                <swiper-item class="swiper_item">
+                    <image class="img" mode="widthFix" src="../../image/takeout/coupon/takeout-banner2.png"></image>
+                </swiper-item>
+                <swiper-item class="swiper_item">
+                    <image class="img" mode="widthFix" src="../../image/takeout/coupon/takeout-banner-3.png"></image>
+                </swiper-item>
+            </swiper>
+
+            <!-- <swiper class="swiper" autoplay='true' circular='true' indicator-active-color="#fff" indicator-color="#ccc" indicator-dots='true'>
+                <swiper-item class="swiper_item">
+                    <image class="img" mode="widthFix" src="../image/takeout/coupon/weapp-1.png"></image>
+                </swiper-item>
+            </swiper> -->
+
+        </view>
+    </view>
+    <view class="icon_menu">
+        <button class="item" onClick="">
+            <image class="icon" mode="widthFix" src="../../image/icon/takeout-home-icon-film.png"></image>
+            <text class="label">今天吃啥</text>
+        </button>
+        <button class="item" onClick="">
+            <image class="icon" mode="widthFix" src="../../image/icon/takeout-home-icon-ele.png"></image>
+            <text class="label">饿了么</text>
+        </button>
+        <button class="item" onClick="">
+            <image class="icon" mode="widthFix" src="../../image/icon/takeout-home-icon-meituan.png"></image>
+            <text class="label">美团外卖</text>
+        </button>
+        <button class="item" onClick="">
+            <image class="icon" mode="widthFix" src="../../image/icon/takeout-home-icon-meituan.png"></image>
+            <text class="label">美团外卖</text>
+        </button>
+        <button class="item" openType="share">
+            <image class="icon" mode="widthFix" src="../../image/icon/takeout-home-icon-share.png"></image>
+            <text class="label">分享好友</text>
+        </button>
+    </view>
+    <view class="list shadow">
+        <view class="item animated fadeIn" onClick="">
+            <view class="left">
+                <image class="label ele" mode="widthFix" src="../../image/item/label-ele.png"></image>
+                <image class="mark ele" mode="widthFix" src="../../image/item/mark-ele.png"></image>
+                <view class="content">
+                    <view class="title">饿了么天天抢红包</view>
+                    <view class="info">
+                        <text class="price">66</text>
+                        <text class="unit">元</text>
+                        <text class="tip">今日仅剩个100个</text>
+                    </view>
+                </view>
+            </view>
+            <view class="right">
+                <view class="btn red">免费领取</view>
+            </view>
+        </view>
+        <view></view>
+        <view class="item animated fadeIn" onClick="">
+            <view class="left">
+                <image class="label mt" mode="widthFix" src="../../image/item/label-mt.png"></image>
+                <image class="mark mt" mode="widthFix" src="../../image/item/mark-mt.png"></image>
+                <view class="content">
+                    <view class="title">美团外卖红包</view>
+                    <view class="info">
+                        <text class="price">56</text>
+                        <text class="unit">元</text>
+                        <text class="tip">今日仅剩100个</text>
+                    </view>
+                </view>
+            </view>
+            <view class="right">
+                <view class="btn red">免费领取</view>
+            </view>
+        </view>
+    </view>
+</view>

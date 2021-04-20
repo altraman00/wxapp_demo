@@ -1,5 +1,5 @@
 /* pages/list.wxss */
-
+@import "../templates/templates.wxss";
 
 page{
   display: flex;
@@ -33,3 +33,32 @@ page{
   height: 4rpx;
   background: #FFCC00;
 }
+
+
+
+
+
+
+
+.meituan-container{
+  display: flex;
+  align-content: center;
+  /* 从左往右行排列 */
+  flex-direction: column;
+  justify-content: center;
+}
+
+.meituan-container .meituan-hongbao{
+  display: flex;
+  justify-content: center;
+}
+
+.meituan-container .pic{
+  width: 638rpx;
+  height: 200rpx;
+  border-radius: 15rpx;
+  margin-top: 20rpx;
+  /* border: 1px solid red; */
+}
+
+

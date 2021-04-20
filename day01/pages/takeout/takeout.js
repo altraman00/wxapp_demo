@@ -1,20 +1,11 @@
-// pages/list.js
+// pages/takeout/takeout.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    navbar: ['全部','美团', '饿了么','京东','双十一'],
-    currentTab: 0,
-    takeoutName:"全部"
-  },
 
-  navbarTap: function(e){
-    this.setData({
-      currentTab: e.currentTarget.dataset.idxx,
-      takeoutName: this.data.navbar[e.currentTarget.dataset.idxx]
-    })
   },
 
   /**

@@ -7,7 +7,7 @@ Page({
   data: {
     message: [
       {
-        mentor_image_uri: "../../image/gril01.jpeg",
+        mentor_image_uri: "../../image/nav/gril01.jpeg",
         mentor_name: "lhs",
         career: "程序员",
         company_name: "aft",
@@ -15,7 +15,7 @@ Page({
         "mentor_skills": "微信小程序"
       },
       {
-        mentor_image_uri: "../../image/boy01.jpeg",
+        mentor_image_uri: "../../image/nav/boy01.jpeg",
         mentor_name: "lwx",
         career: "美工",
         company_name: "aft",
@@ -24,7 +24,7 @@ Page({
       }
     ],
     markers: [{
-      iconPath: "../../image/gril01.jpeg",
+      iconPath: "../../image/nav/gril01.jpeg",
       id: 0,
       latitude: 23.099994,
       longitude: 113.324520,

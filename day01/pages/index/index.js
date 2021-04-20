@@ -33,7 +33,50 @@ Page({
           articleNum: 523423
         }
       }
-
+    ],
+    chatBoardList: [
+      {
+        boardName: ">>瞎聊板块",
+        boardIntro: [
+          "日常生活","兴趣交流","时事经济","会员闲聊"
+        ],
+        boardNum: {
+          topicNum: 7231,
+          articleNum: 34343
+        }
+      },
+      {
+        boardName: ">>无聊板块",
+        boardIntro: [
+          "海外生活","聊天交流","图片展示","会员收益"
+        ],
+        boardNum: {
+          topicNum: 31231,
+          articleNum: 523423
+        }
+      }
+    ],
+    acrossBoardList: [
+      {
+        boardName: ">>蓝天板块",
+        boardIntro: [
+          "日常生活","兴趣交流","时事经济","会员闲聊"
+        ],
+        boardNum: {
+          topicNum: 7231,
+          articleNum: 34343
+        }
+      },
+      {
+        boardName: ">>白云板块",
+        boardIntro: [
+          "海外生活","聊天交流","图片展示","会员收益"
+        ],
+        boardNum: {
+          topicNum: 31231,
+          articleNum: 523423
+        }
+      }
     ]
 
   },
