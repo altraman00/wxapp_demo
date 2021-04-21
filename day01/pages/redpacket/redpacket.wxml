@@ -1,0 +1,23 @@
+<view class="coupons-body">
+    <view class="app">
+        <view class="wrapper">
+            <view class="content">
+                <view class="coupon-top">
+                    <text>¥50.00</text>
+                </view>
+                <view class="coupon-middle">店名：八中撒码头</view>
+                <view class="coupon-bottom">有效期：2019.12.23-2020.01.23</view>
+            </view>
+            <view class="split-line"></view>
+            <view class="tip">
+                <view class="conditions">满500元使用</view>
+                <button class="useNow" size="mini" bindtap="">立即使用</button>
+            </view>
+            <label>
+                <view class="share-button">
+                    <image style="width:30rpx;height:30rpx;" src="../../image/icon/takeout-home-icon-ele.png"></image>
+                </view>
+            </label>
+        </view>
+    </view>
+</view>

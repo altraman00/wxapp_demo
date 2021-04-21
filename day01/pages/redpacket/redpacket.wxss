@@ -1,0 +1,167 @@
+  .coupons-body{
+    border: 1px solid red;
+  }
+
+  
+  /* 优惠券 */
+  /* 优惠券样式 */
+  .app {
+    padding: 10rpx; 
+    background: #eee;
+    margin-bottom: 5rpx;
+  }
+  
+  .wrapper {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    background:linear-gradient(-90deg,rgba(250,173,82,1),rgba(254,50,103,1));
+    /*实现颜色渐变 */
+  }
+
+
+
+
+
+
+  
+  /*前半部分样式*/
+  .content {
+    position: relative;
+    flex: 1;
+    padding: 20rpx;
+    text-align: left;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  /*给前半部分加两个伪类，基本样式如下*/
+  .content:before, 
+  .content:after{
+    content: '';
+    position: absolute;
+    width: 32rpx;
+    height: 16rpx;
+    background: #eee;
+    left: -16rpx;
+    z-index: 1;
+  }
+
+  /*几个伪类化成的圆弧的样式以及位置（置于顶部）我把它放在一起了*/
+  .content:before, 
+  .tip:before, 
+  .split-line:before{
+    border-radius: 0 0 16rpx 16rpx;
+    top: 0;
+  }
+      
+  .content:after, 
+  .tip:after, 
+  .split-line:after{
+    border-radius: 16rpx 16rpx 0 0;
+    bottom: 0;
+  }
+  
+  .coupon-top text{
+    font-size: 50rpx;
+    color: #fff;
+  }
+  
+  .coupon-middle{
+    color: #fff;
+  }
+  
+  .coupon-bottom{
+    color: #000;
+    font-size: 24rpx;
+  }
+  
+
+
+
+
+
+  
+  /*中间竖直虚线样式*/
+  .split-line {
+    position: relative;
+    flex: 0 0 0;
+    margin: 0 10rpx 0 6rpx;
+    border-left: 4rpx dashed #eee;   
+  }
+  
+  /*给虚线加两个伪类，基本样式如下*/
+  .split-line:before, 
+  .split-line:after {
+    content: '';
+    position: absolute;
+    width: 32rpx;
+    height: 16rpx;
+    background: #eee;
+    left: -18rpx;
+    z-index: 1;
+  }
+  
+
+
+
+
+
+  /*后半部分样式*/
+  .tip {
+    position: relative;
+    padding:  50rpx 30rpx;
+    flex: 0 0 200rpx;
+    text-align: center;
+  }
+    
+  .tip:before, 
+  .tip:after{
+    content: '';
+    position: absolute;
+    width: 32rpx;
+    height: 16rpx;
+    background:#eee;
+    right: -16rpx;
+    z-index: 1;
+  }
+
+  .conditions {
+    color: #eee;
+    font-size: 28rpx;
+    padding:15rpx;
+  }
+
+  .useNow {
+    color: rgba(254,50,103,1);
+    font-size: 30rpx;
+    border-radius: 50rpx;
+    border-style: none;
+  }
+
+  .share-button{
+    position: relative;
+    right: 10rpx;
+    top: 10rpx;
+  }
+
+
+
+  
+
+  
+  
+
+
+
+  
+
+
+  
+
+
+
+
+  

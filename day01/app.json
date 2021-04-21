@@ -1,6 +1,7 @@
 {
   "usingComponents": {},
   "pages": [
+    "pages/redpacket/redpacket",
     "pages/takeout/takeout",
     "pages/index/index",
     "pages/list/list",
@@ -28,13 +29,19 @@
         "pagePath": "pages/index/index",
         "iconPath": "image/nav/icon_component.png",
         "selectedIconPath": "image/nav/icon_component_HL.png",
-        "text": "首页"
+        "text": "首页1"
       },
       {
         "pagePath": "pages/list/list",
         "iconPath": "image/nav/icon_API.png",
         "selectedIconPath": "image/nav/icon_API_HL.png",
         "text": "外卖"
+      },
+      {
+        "pagePath": "pages/redpacket/redpacket",
+        "iconPath": "image/nav/icon_API.png",
+        "selectedIconPath": "image/nav/icon_API_HL.png",
+        "text": "红包"
       },
       {
         "pagePath": "pages/takeout/takeout",

@@ -23,9 +23,6 @@
         <template is="takeoutdetail" data="{{takeoutName}}"></template>
       </view> -->
 
-
-
-
       <view class="meituan-hongbao">
         <image class="pic" src="../../image/takeout/coupon/ele_banner.png" mode="aspectFit"></image>
       </view>
